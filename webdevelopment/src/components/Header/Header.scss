@@ -1,0 +1,41 @@
+nav {
+    width: 400px;
+    padding: 25px 0;
+    height: 50px;
+    ul {
+        display: flex;
+        list-style: none;
+        li{
+            margin: 0 20px;
+        }
+        a {
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.5);
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 10px;
+            width: 40px;
+        }
+        .active {
+            a {
+                color: rgba(0, 0, 0, 1);
+                position: relative;
+            }
+            a:before {
+                content: "";
+                position: absolute;
+                width: 6px;
+                height: 6px;
+                background-color: black;
+                border-radius: 50%;
+                bottom: -10px;
+                left: 50%;
+            }
+        }
+    }
+    
+}
+
+.main-wrapper {
+    display: flex;
+}
